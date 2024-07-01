@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 55.5em) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.6rem;
+  background-color: #222831;
+  color: #eeeeee;
+  padding: 0 4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7rem 0;
+}
+
+.container {
+  display: flex;
+  @media only screen and (max-width: 42em) {
+    flex-direction: column;
+  }
+}
+
+.left {
+  background-color: #31363f;
+  width: 40%;
+  border: 0.5px solid #eeeeee;
+  @media only screen and (max-width: 42em) {
+    order: 1;
+    width: 100%;
+    padding: 4rem 0;
+  }
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 42em) {
+    order: -1;
+    margin-bottom: 4rem;
+  }
+}
+
+/* Profile picture */
+.profile-img {
+  border-radius: 50%;
+  transform: translateX(-4rem);
+  border: 1px solid #eeeeee;
+  @media only screen and (max-width: 42em) {
+    transform: translateX(0);
+  }
+}
+
+/* Slack name and email */
+.profile-info {
+  margin-top: 2.5rem;
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  @media only screen and (max-width: 42em) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Primary heading */
+.heading {
+  font-size: 6.5rem;
+  color: #76abae;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -1px;
+  margin: 3rem 0;
+}
+
+/* List-container styling */
+.goals {
+  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+}
+
+/* List Styling */
+.goals-item {
+  font-size: 2.5rem;
+}
+
+.goals-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/* Links container styling */
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: 7rem 0;
+}
+
+/* Link styling */
+.link:link,
+.link:visited {
+  color: inherit;
+  text-decoration: underline;
+  transform: scale(1);
+  transform: all 0.2s ease;
+}
+
+.link:hover {
+  color: #76abae;
+  transform: scale(1.15);
+  text-decoration: none;
+}

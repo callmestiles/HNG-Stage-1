@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG - Stage 1 Solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <p id="day" data-testid="currentDay"></p>
+        <p id="time" data-testid="currentTimeUTC"></p>
+    </section>
+    <main class="container">
+        <div class="left">
+            <h1 class="heading">My Goals</h1>
+            <ul class="goals">
+                <li class="goals-item">Continual Learning</li>
+                <li class="goals-item">More Certifications</li>
+                <li class="goals-item">Network Expansion</li>
+                <li class="goals-item">Hands-on Experience</li>
+                <li class="goals-item">Soft Skills Development</li>
+            </ul>
+        </div>
+        <div class="right">
+            <img class="profile-img" src="/profile.jpg" alt="My profile picture" width="300"
+                data-testid="slackProfilePicture">
+            <div class="profile-info">
+                <p data-testid="slackDisplayName">Dunamis</p>
+                <p data-testid="slackEmail">dunamisolukayode@gmail.com</p>
+            </div>
+        </div>
+    </main>
+    <section class="links">
+        <a class="link" href="http://hng.tech/learn" data-testid="hngLink">HNG</a>
+        <a class="link" href="http://keyword.dog/" data-testid="keywordLink">Keyword Dog</a>
+        <a class="link" href="http://scrapeanyweb.site/" data-testid="scrapeanywebLink">Scrape</a>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
